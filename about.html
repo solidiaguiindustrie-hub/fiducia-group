@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos de nous - SOLIDIAGUI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Styles spécifiques à cette page */
+    .about-page-container {
+      background: var(--card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 30px;
+      margin-top: 60px;
+      box-shadow: var(--shadow);
+    }
+    .about-page-container h1 {
+      font-size: 1.5rem;
+      color: var(--accent-2);
+      margin-top: 0;
+    }
+    .about-page-container p {
+      line-height: 1.6;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .back-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--ring);
+      box-shadow: 0 8px 20px rgba(31, 191, 91, 0.12);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <section class="about-page-container">
+      <h1>À propos de nous</h1>
+      <p>
+        FIDUCIA est une société guinéenne spécialisée dans la protection financière, le financement responsable et le recouvrement professionnel.
+Notre objectif est simple : sécuriser vos projets, protéger vos biens et accompagner votre croissance, avec des solutions fiables adaptées aux réalités guinéennes.
+
+Nous plaçons la confiance, la transparence et la performance au cœur de chacune de nos actions.
+
+<br><br>
+
+⭐ NOS DOMAINES D'EXPERTISE
+<br>
+
+🔐 ASSURANCE : <br> Protéger l’essentiel
+
+FIDUCIA vous offre une gamme complète d’assurances conçues pour sécuriser votre vie, votre famille et vos activités.
+
+Nos assurances :
+	•	🚗 Auto : responsabilité civile, tous risques, vol, incendie.
+	•	🏠 Habitation : protection de votre maison et de vos biens.
+	•	❤️ Santé : couverture médicale adaptée en Guinée et à l’international.
+	•	✈️ Voyage : assistance et protection lors de vos déplacements.
+	•	🏢 Multirisque professionnelle : sécurisation des locaux et activités.
+	•	👨‍👩‍👧 Vie & Prévoyance : capital, retraite, protection familiale.
+
+<br><br>
+
+💼 CRÉDIT – Financer vos ambitions
+
+Que vous soyez un particulier, un entrepreneur ou une entreprise, FIDUCIA vous accompagne avec des solutions de financement rapides, accessibles et sécurisées.
+<br> <br>
+Nos produits de crédit : <br>
+	•	💳 Crédit à la consommation
+  <br>
+	•	🏡 Crédit immobilier
+  <br>
+	•	🚚 Crédit d’équipement
+  <br>
+	•	🏢 Crédit entreprise / PME
+  <br>
+	•	💼 Microcrédit pour petits commerces et artisans <br>
+
+Nous analysons chaque dossier avec professionnalisme pour garantir un financement responsable et durable.
+
+<br> <br>
+
+⚖️ RECOUVREMENT – Récupérer ce qui vous revient
+
+FIDUCIA propose un service de recouvrement moderne, discret et efficace afin de protéger votre trésorerie.
+
+Nos services :
+	•	🤝 Recouvrement amiable : relances, négociations, plans d’apurement.
+	•	⚖️ Recouvrement judiciaire : procédures encadrées avec des partenaires juridiques.
+	•	📂 Gestion de portefeuille clients : suivi, relance, prévention des impayés.
+	•	🛡️ Conseil en gestion du risque financier
+
+Notre approche préserve vos relations commerciales tout en maximisant les résultats.
+
+<br>
+
+💡 Pourquoi choisir FIDUCIA ?<br>
+	•	✔️ Une expertise solide du marché guinéen <br>
+	•	✔️ Une équipe professionnelle et disponible <br>
+	•	✔️ Des solutions personnalisées <br>
+	•	✔️ Une transparence totale dans nos interventions <br>
+	•	✔️ Un accompagnement complet : assurance, crédit et recouvrement <br>
+      </p>
+      <p>
+        Au-delà de la simple transmission de savoir, la mission profonde d'IPCE LMD est de se concentrer sur l'avenir professionnel de ses étudiants : 
+        leur objectif principal est de vous donner une visibilité et de vous rendre digne de considération sur le marché du travail.
+      </p>
+      <a href="index.html" class="back-btn">← Retour</a>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> IPCE LMD KANKAN — Tous droits réservés
+    </footer>
+  </main>
+  
+  <script src="script.js"></script>
+  <script>
+    const YEAR_EL = document.getElementById('year');
+    if (YEAR_EL) YEAR_EL.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

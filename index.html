@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIDUCIA-GROUP – vCard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="splashScreen" class="splash-screen">
+    <div class="splash-spinner-container">
+      <div class="logo-background"></div>
+      <img src="logoFudicia02.png" alt="IPCE LMD" class="splash-logo">
+      <div class="spinner spinner-1"></div> 
+      <div class="spinner spinner-2"></div>
+      <div class="spinner spinner-3"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <div class="cover">
+        <div class="image-slider" id="imageSlider">
+          <img src="cover-01.jpg" alt="Photo de couverture 1" class="cover-img" />
+          <img src="cover-5.jpg" alt="Photo de couverture 2" class="cover-img" />
+           <img src="cover-02.jpg" alt="Photo de couverture 1" class="cover-img" />
+          <img src="cover-4.jpg" alt="Photo de couverture 2" class="cover-img" />
+          <img src="cover-3.jpg" alt="Photo de couverture 2" class="cover-img" />
+        </div>
+      </div>
+      
+      <a href="about.html" class="about-button">À propos de nous</a>
+      <div class="logo-wrap">
+        <img src="logoFudicia02.png" alt="Logo" class="logo" />
+      </div>
+
+      <div class="profile-wrap">
+          <img src="Photo.jpg" alt="Photo de profil" class="profile" />
+      </div>
+
+      <header class="identity">
+        <h1 class="fullname">ALPHA BACAR <span class="accent"></span> MANSARE</h1>
+        <p class="role">Directeur Général</p> <br>
+        <div id="status" class="status">Vérification du statut...</div>
+      </header>
+
+      <section class="company">
+        <h2 class="brand">FIDUCIA GROUP</h2>
+        <p class="tagline">Crédit et Assurance</p>
+      </section>
+
+      <nav class="actions">
+        <a class="action" href="tel:+224629143737" aria-label="Appeler">📞 Appeler</a>
+        <a class="action" href="tel:+224620631098" aria-label="Appeler">📞 Appeler</a>
+        <a class="action" href="https://wa.me/224620631098" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+        <a class="action" href="mailto:abmansare@fiducia-group.fr" aria-label="Email">✉️ Email</a>
+        <a class="action" href="https://maps.app.goo.gl/2tZj3Jknu8BDZ1PQ9?g_st=aw" target="_blank" rel="noopener" aria-label="Adresse">📍 Adresse</a>
+      </nav>
+
+    
+      <section class="hours">
+        <h3>Heures d’ouverture</h3>
+        <ul class="hours-list">
+          <li><span>Lundi</span><span>08:45 – 19:00</span></li>
+          <li><span>Mardi</span><span>08:45 – 19:00</span></li>
+          <li><span>Mercredi</span><span>08:45 – 19:00</span></li>
+          <li><span>Jeudi</span><span>08:45 – 19:00</span></li>
+          <li><span>Vendredi</span><span>08:45 – 19:00</span></li>
+          <li><span>Samedi</span><span>08:45 – 17:00</span></li>
+          <li><span>Dimanche</span><span>Fermé</span></li>
+        </ul>
+      </section>
+
+      <section class="gallery">
+        <div class="tile"><img src="sary01.jpg" alt="Visuel 1" /></div>
+        <div class="tile"><img src="sary02.jpg" alt="Visuel 2" /></div>
+        <div class="tile"><img src="sary03.jpg" alt="Visuel 3" /></div>
+      </section>
+
+      <section class="socials">
+        <a href="#" aria-label="Facebook" class="social">f</a>
+        <a href="https://wa.me/224620631098" aria-label="WhatsApp" class="social">w</a>
+        <a href="#" aria-label="X / Twitter" class="social">x</a>
+        <a href="#" aria-label="LinkedIn" class="social">in</a>
+        <a href="#" aria-label="Instagram" class="social">ig</a>
+      </section>
+
+      <section class="cta">
+        <button class="btn" onclick="downloadVCF()">💾 Enregistrer le contact</button>
+        <button class="btn" onclick="shareCard()">🔗 Partager</button>
+        <button class="btn outline" onclick="generateQR()">📱 QR Code vCard</button>
+      </section>
+
+      <section id="qrSection" class="qr hidden">
+        <h3>Scannez pour ajouter le contact</h3>
+        <div id="qrcode"></div>
+        <button class="btn tiny" onclick="hideQR()">Fermer</button>
+      </section>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> IPCE LMD KANKAN — Tous droits réservés
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
